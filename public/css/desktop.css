@@ -1,0 +1,88 @@
+body {
+    background: url(/res/img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+#dock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    height: 70px;
+    background: rgba(255,255,255);
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+#dock-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#dock-list > li {
+    width: 60px;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.icon > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: .85;
+}
+
+.icon > img:hover {
+    width: 75px;
+    height: 75px;
+    transition: ease .2s;
+}
+
+/*窗口相關*/
+
+.window {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    background: rgba(245,245,245,0.9);
+    border: 1px solid rgba(144,144,144,0.3);
+    box-sizing: border-box;
+    transition: ease-in .2s;
+}
+
+.titleBar {
+    position: relative;
+    margin-top: 0;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: move; /* 让标题栏可以拖动 */
+
+    /*我宣佈蘋果火狐IE都是傻逼*/
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.closeButton {
+    position: absolute;
+    right: 10px;
+    border: none;
+}
