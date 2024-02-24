@@ -1,0 +1,50 @@
+
+    // 窗口移動相關
+    // var offsetX = 0
+    // var offsetY = 0
+
+    // titleBar.addEventListener('mousedown', function(e) {
+    //     // 計算偏移數
+    //     offsetX = e.clientX - window.offsetLeft
+    //     offsetY = e.clientY - window.offsetTop
+    // })
+
+    // // 添加釋放事件
+    //     document.addEventListener('mousemove', dragWindow)
+    //     document.addEventListener('mouseup', releaseWindow)
+
+    // function dragWindow(e) {
+    //     var newX = e.clientX - offsetX
+    //     var newY = e.clientY - offsetY
+
+    //     window.style.left = newX + 'px'
+    //     window.style.top = newY + 'px'
+    //     // window.style.transform = `translate(${newX}px, ${newY}px)`
+    // }
+
+    // function releaseWindow() {
+    //     document.removeEventListener('mousemove', dragWindow)
+    //     document.removeEventListener('mouseup', releaseWindow)
+    // }
+
+    // var offsetX = 0
+    // var offsetY = 0
+
+    // titleBar.addEventListener('mousedown', function(e) {
+    //     offsetX = e.clientX - window.offsetLeft
+    //     offsetY = e.clientY - window.offsetTop
+
+    //     document.addEventListener('mousemove', dragWindow)
+    // })
+
+    // function dragWindow(e) {
+    //     var newX = e.clientX - offsetX
+    //     var newY = e.clientY - offsetY
+
+    //     window.style.left = newX + 'px'
+    //     window.style.top = newY + 'px'
+    // }
+
+    // window.addEventListener('mouseup', function() {
+    //     document.removeEventListener('mousemove', dragWindow)
+    // })
