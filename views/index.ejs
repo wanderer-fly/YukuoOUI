@@ -6,31 +6,23 @@
         <title>Desktop</title>
     </head>
     <body>
-        <header></header>
-        YukioOUI内部測試單元
-        未經許可請勿外傳
+        <header>git-<%= gitVersion %></header>
         <div id="dock">
             <ul id="dock-list">
-                <li class="icon" onclick="createWindow('小圓帽雲服務', 100, 200)">
+                <li class="icon" onclick="createWindow('小圓帽雲服務', 'null', 100, 200)">
                     <img src="/res/img/icons/cloud.png" draggable="false">
                 </li>
-                <li class="icon" onclick="showNotifiction(5, 'debug', 'YukioOUI内部測試單元 - 通知')">
+                <li class="icon" onclick="showNotifiction(5, 'debug', 'YukioOUI内部測試單元')">
                     <img src="/res/img/icons/test.jpg" draggable="false">
+                </li>
+                <li class="icon" onclick="createWindow('設定', '/settings', 500, 600)">
+                    <img src="/res/img/icons/settings.png" draggable="false">
                 </li>
             </ul>
         </div>
         <script src="/scripts/popUpWindow.js"></script>
         <script src="/scripts/notifiction.js"></script>
         <script src="/scripts/Sortable.min.js"></script>
-        <script>
-            new Sortable(document.getElementById('dock-list'), {
-              // 啟用拖放
-              draggable: '.icon',
-              // 阻止拖放圖像
-              ghostClass: 'ghost',
-              // 換位動畫
-              animation: 150
-            });
-        </script>
+        <script src="/scripts/icons.js"></script>
     </body>
 </html>

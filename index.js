@@ -1,15 +1,26 @@
 const express = require('express')
-const app = express()
 const path = require('path');
-const port = 8964
+const git = require('git-rev-sync')
 const Sortable = require('sortablejs') // SortableJS
+
+const port = 8964
+const app = express()
+const version = git.long()
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs')
 
 app.get("/", (req, res) => {
-    res.render('index', { windowCount: 0 })
+    res.render('index', { 
+        gitVersion: version
+    })
+})
+
+app.get("/settings", (req, res) => {
+    res.render('settings', {
+        gitVersion: version
+    })
 })
 
 
