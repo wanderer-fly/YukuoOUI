@@ -113,6 +113,9 @@ header {
     position: absolute;
     right: 10px;
     border: none;
+    background: none;
+    font-size: large;
+    color: rgba(31, 31, 31, 0.6);
 }
 
 /* 通知相關 */

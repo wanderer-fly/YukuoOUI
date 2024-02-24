@@ -11,7 +11,7 @@ function createWindow(title, url, w_width, w_height) {
     window.appendChild(titleBar)
 
     var closeButton = document.createElement('button')
-    closeButton.innerHTML = 'X'
+    closeButton.innerHTML = 'x'
     closeButton.className = 'closeButton'
     titleBar.appendChild(closeButton)
 
