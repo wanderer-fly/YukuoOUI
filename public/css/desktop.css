@@ -23,6 +23,71 @@ header {
     z-index: 999;
 }
 
+#mainBtn {
+    position: absolute;
+    margin-top: 4px;
+    left: 10px;
+}
+
+#mainBtn > img {
+    height: 22px;
+}
+
+#mainMenu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 40px;
+    left: 10px;
+    width: 200px;
+    height: max-content;
+    border-radius: 5px;
+    background: rgba(213, 213, 213, 0.8);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    box-sizing: border-box;
+    padding: 10px 10px;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mainMenu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#mainMenu > ul {
+    width: 100%;
+    list-style: none;
+}
+
+#mainMenu > ul > li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#mainMenu > ul > li:hover {
+    background: rgba(152, 152, 152, 0.8);
+}
+
+.lang {
+    position: absolute;
+    margin-top: 2.5px;
+    right: 10px;
+}
+
+.lang > img {
+    height: 25px;
+}
+
 #dock {
     display: flex;
     flex-direction: row;

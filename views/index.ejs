@@ -6,10 +6,25 @@
         <title>Desktop</title>
     </head>
     <body>
-        <header>git-<%= gitVersion %></header>
+        <header>
+            <div id="mainBtn">
+                <img src="/res/img/icons/menu.svg">
+            </div>
+            <div class="lang">
+                <img src="/res/img/icons/i18n/zh-tw.svg">
+            </div>
+            <!-- 不可見 -->
+            <div id="mainMenu">
+                <ul>
+                    <li>關機</li>
+                    <li>重新開機</li>
+                    <li>退出登入</li>
+                </ul>
+            </div>
+        </header>
         <div id="dock">
             <ul id="dock-list">
-                <li class="icon" onclick="createWindow('小圓帽雲服務', '/filemanager', 700, 900)">
+                <li class="icon" onclick="createWindow('小圓帽雲服務', '/filemanager', 700, 800)">
                     <img src="/res/img/icons/cloud.png" draggable="false">
                 </li>
                 <li class="icon" onclick="showNotifiction(5, 'debug', 'YukioOUI内部測試單元')">
@@ -24,5 +39,6 @@
         <script src="/scripts/notifiction.js"></script>
         <script src="/scripts/Sortable.min.js"></script>
         <script src="/scripts/icons.js"></script>
+        <script src="/scripts/header.js"></script>
     </body>
 </html>
